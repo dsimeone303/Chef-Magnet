@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="Viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="/static/stylesheet/allpages.css">
+    <title> Chef Magnet - Home</title>
+  </head>
+  <body>
+    <header>
+     <div id="name">Chef Magnet</div>
+      <a>Home</a>
+      <a>Add a Website</a>
+    </header>
+    <main>
+      <div class="abs" id="background"></div>
+      <form action="/getit" method="post" id='testform'>
+        <button type="submit">click to show results from table</button>
+      </form>
+      <div id="mainContainer">
+       <form action="/submit" method="post" id="searchmenu">
+       <div class="slideshow-container">
+       <div class="menuSlide">
+         <input type="radio" id="breakfast" name="dish" value="breakfast">
+         <label for="breakfast" class="optionBubble"><img src="/static/images/svg/eggs.svg"><p>Breakfast</p></label>
+         <input type="radio" id="apps" name="dish" value="apps">
+         <label for="apps" class="optionBubble"><img src="/static/images/svg/eggs.svg"><p>Starter</p></label>
+         <input type="radio" id="main" name="dish" value="main">
+         <label for="main" class="optionBubble"><img src="/static/images/svg/eggs.svg"><p>Main</p></label>
+         <input type="radio" id="dessert" name="dish" value="dessert">
+         <label for="dessert" class="optionBubble"><img src="/static/images/svg/eggs.svg"><p>Dessert</p></label>
+         <input type="radio" id="drinks" name="dish" value="drinks">
+         <label for="drinks" class="optionBubble"><img src="/static/images/svg/eggs.svg"><p>Drinks</p></label>
+       </div>
+       <div class="menuSlide">
+         <input type="checkbox" id="all" name="cousine" value="all">
+            <label for="all" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Everything</p>
+            </label>
+            <input type="checkbox" id="american" name="cousine" value="american">
+            <label for="american" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>American</p>
+            </label>
+            <input type="checkbox" id="chinese" name="cousine" value="chinese">
+            <label for="chinese" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Chinese</p>
+            </label>
+            <input type="checkbox" id="french" name="cousine" value="french">
+            <label for="french" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>French</p>
+            </label>
+            <input type="checkbox" id="german" name="cousine" value="german">
+            <label for="german" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>German</p>
+            </label>
+            <input type="checkbox" id="greek" name="cousine" value="greek">
+            <label for="greek" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Greek</p>
+            </label>
+            <input type="checkbox" id="italian" name="cousine" value="italian">
+            <label for="italian" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Italian</p>
+            </label>
+            <input type="checkbox" id="lebanese" name="cousine" value="lebanese">
+            <label for="lebanese" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Lebanese</p>
+            </label>
+            <input type="checkbox" id="mexican" name="cousine" value="mexican">
+            <label for="mexican" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Mexican</p>
+            </label>
+            <input type="checkbox" id="japanese" name="cousine" value="japanese">
+            <label for="japanese" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Japanese</p>
+            </label>
+            <input type="checkbox" id="indian" name="cousine" value="indian">
+            <label for="indian" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>indian</p>
+            </label>
+            <input type="checkbox" id="spanish" name="cousine" value="spanish">
+            <label for="spanish" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Spanish</p>
+            </label>
+            <input type="checkbox" id="thai" name="cousine" value="thai">
+            <label for="thai" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Thai</p>
+            </label>
+            <input type="checkbox" id="turkish" name="cousine" value="turkish">
+            <label for="turkish" class="optionBubble">
+              <img src="/static/images/svg/eggs.svg">
+              <p>Turkish</p>
+            </label>
+            
+       </div>
+       <div class="menuSlide" id="popularDishes"></div>
+       <div class="menuSlide" id="Protein"></div>
+       <a class="prev" onclick="plusSlides(-1)">Go back</a>
+       <a class="next" onclick="plusSlides(1)">Next</a>
+         </div>
+         <div style="text-align:center">
+           <span class="dot"></span>
+           <span class="dot"></span>
+           <span class="dot"></span>
+         </div>
+         <div>
+         <label>Protein</label>
+         <select id="protein" name="protein">
+         <option value="meat">Meat</option>
+         <option value="poultry">Poultry</option>
+         <option value="fish">fish/seafood</option>
+          <option value="vegan">vegatarian/eggs</option>
+         </select><span class="smltxt"> (may contain other protiens aswell, depending on the dish)</span>
+         </div>
+         <div id="gobtnContainer">
+         <button type="submit" id="gobtn">Go</button>
+         </div>
+       </form>
+      </div>
+      honestly, catagories should change per cusine. for Mexican:
+      apps
+      breakfast
+      streetfood (antojitos)
+      basics
+      soups
+      Desserts
+      Sides
+      
+      <div id="responseContainer">
+        
+      </div>
+    </main>
+    <footer>
+      
+    </footer>
+    <script type="text/javascript" src="/static/js/tester.js"></script>
+  </body>
+</html>

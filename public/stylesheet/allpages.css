@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* common classes*/
+.abs {
+  position: absolute;
+}
+.stick {
+  position: sticky;
+}
+header {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#name {
+  padding: 0 2rem;
+  font-size: 3rem;
+}
+header a {
+  padding: 0 0.8rem;
+  margin: 0 1.2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  border-bottom: 4px solid transparent;
+  transition: 0.2s ease-in all;
+  cursor: pointer;
+}
+
+header a:hover {
+  border-bottom: 4px solid black;
+}
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#mainContainer {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.smltxt {
+  font-size: 0.8rem;
+}
+select {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+#background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(250, 250, 250) 50%, rgb(137, 207, 240));
+}
+#gobtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+#gobtn {
+  padding: 0.3rem 2rem;
+}
+
+.minis {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  width: 250px;
+}
+
+#responseContainer {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.minis img {
+  width: 200px;
+  height: 200px;
+}
+
+.menuSlide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  height: 250px;
+  width: 100%;
+}
+
+.optionBubble {
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+  box-sizing: border-box;
+  border: 4px solid rgba(0,240,0,.4);
+  box-shadow: 3px 3px 6px -3px darkgray;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.optionBubble img {
+  height: 35px;
+  padding-bottom: 5px;
+}
+.optionBubble p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  background-color: rgb(250, 230, 230);
+}
